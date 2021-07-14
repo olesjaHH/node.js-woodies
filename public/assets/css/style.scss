@@ -2,9 +2,10 @@
 
 /* font-family: 'Nunito', sans-serif; */
 
-$main-yellow-background: linear-gradient(180deg, rgba(255, 255, 255, 0.5) 0%, rgba(255, 255, 255, 0) 100%);
+$main-yellow-background:#F5CD6B;
 $yellow: #F3C552;
 $yellow-darker: #DAA520;
+$rosa-accent: #F9BDBD;
 $font-color: #3E3F43;
 $font-color-light: #8D8D8D;
 $font-color-dark: #000000;
@@ -19,6 +20,8 @@ $font-color-white: #FFFFFF;
 body {
     font-family: 'Nunito', sans-serif;
 }
+
+/* ---------Nav--------------------------- */
 #hero {
    padding-top: 2%;
     ul {
@@ -32,6 +35,10 @@ body {
                 text-decoration: none;
                 color: $font-color;
             }
+            a:active, a:focus, a:hover {
+                color: $yellow-darker;
+            }
+            
             .firstLink {
                 margin-left: 100px;
             }
@@ -40,8 +47,57 @@ body {
                 border-radius: 5px;
                 padding: 5px 20px;
                 font-weight: bold;
+                background: $rosa-accent;
             }
         }
+        
     }
-    
 }
+/* -----------Home ------------------------ */
+#backgroundHome {
+    padding: 4%;
+    background: $main-yellow-background;
+    #woodFurniture {
+        margin: 5%;
+        background: white;
+        border-radius: 20px;
+        box-shadow: 0 0 20px $font-color-light;
+        min-height: 97vh;
+        #homeHeader {
+            background: url(../img/page1_table_complete.png) right / 58.5%  no-repeat ;
+            min-height: 90vh;
+        }
+        #mainArticle {
+            #articleWood {
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                padding-left: 7%;
+                width: 50%;
+                padding-top: 15%;
+                h3 {
+                    font-size: 2rem;
+                    font-weight: 400;
+                    span {
+                        font-weight: bold;
+                    }
+                }
+                h1 {
+                    font-size: 4rem;
+                    padding: 2% 0 3%;
+                }
+                input {
+                    background: $yellow-darker;
+                    color: $font-color-white;
+                    outline-style: none;
+                    border-style: none;
+                    padding: 15px 30px;
+                    border-radius: 2px;
+                }
+            }
+            
+        }
+    }
+}
+
+/* ----- */

@@ -29,7 +29,6 @@ const server = http.createServer((req, res) => {
         case '.ico':
             contentType = 'image/x-icon'
             break;
-        // Hier alle Dateitypen, die ihr auf der HP habt, anlegen
     }
     console.log("contentType", contentType)
 

@@ -11,6 +11,7 @@ body {
   font-family: 'Nunito', sans-serif;
 }
 
+/* ---------Nav--------------------------- */
 #hero {
   padding-top: 2%;
 }
@@ -37,6 +38,10 @@ body {
   color: #3E3F43;
 }
 
+#hero ul li a:active, #hero ul li a:focus, #hero ul li a:hover {
+  color: #DAA520;
+}
+
 #hero ul li .firstLink {
   margin-left: 100px;
 }
@@ -46,5 +51,67 @@ body {
   border-radius: 5px;
   padding: 5px 20px;
   font-weight: bold;
+  background: #F9BDBD;
 }
+
+/* -----------Home ------------------------ */
+#backgroundHome {
+  padding: 4%;
+  background: #F5CD6B;
+}
+
+#backgroundHome #woodFurniture {
+  margin: 5%;
+  background: white;
+  border-radius: 20px;
+  -webkit-box-shadow: 0 0 20px #8D8D8D;
+          box-shadow: 0 0 20px #8D8D8D;
+  min-height: 97vh;
+}
+
+#backgroundHome #woodFurniture #homeHeader {
+  background: url(../img/page1_table_complete.png) right/58.5% no-repeat;
+  min-height: 90vh;
+}
+
+#backgroundHome #woodFurniture #mainArticle #articleWood {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  padding-left: 7%;
+  width: 50%;
+  padding-top: 15%;
+}
+
+#backgroundHome #woodFurniture #mainArticle #articleWood h3 {
+  font-size: 2rem;
+  font-weight: 400;
+}
+
+#backgroundHome #woodFurniture #mainArticle #articleWood h3 span {
+  font-weight: bold;
+}
+
+#backgroundHome #woodFurniture #mainArticle #articleWood h1 {
+  font-size: 4rem;
+  padding: 2% 0 3%;
+}
+
+#backgroundHome #woodFurniture #mainArticle #articleWood input {
+  background: #DAA520;
+  color: #FFFFFF;
+  outline-style: none;
+  border-style: none;
+  padding: 15px 30px;
+  border-radius: 2px;
+}
+
+/* ----- */
 /*# sourceMappingURL=style.css.map */
